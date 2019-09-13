@@ -1,0 +1,11 @@
+[package]
+name = "akta"
+version = "0.1.0"
+authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
+description = "Tiny Rust Actor library with minimal dependencies"
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+futures-preview = {version="0.3.0-alpha.18", features=["compat", "io-compat", "async-await", "nightly"]}
+tokio-executor={ git="https://github.com/tokio-rs/tokio", features=["threadpool", "blocking"] }
